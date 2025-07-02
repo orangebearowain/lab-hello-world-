@@ -1,5 +1,12 @@
-print("Welcome to AI Applications!")
-name = input("What is your name? ")
-print("Hello", name, "It's great to meet you! ")
-fav = input("What is your favorite programming language? ")
-print("Awesome, ", name , "! ", fav, "is a great choice!")
+numb = input("Please input a number: ")
+numb2 = input("Please input a second number: ")
+oper = input("Please input an operator: ")
+
+if oper == "+":
+    print(int(numb) + int(numb2))
+elif oper == "-":
+    print(int(numb) - int(numb2))
+elif oper == "*":
+    print(int(numb) * int(numb2))
+elif oper == "/":
+    print(int(numb) / int(numb2))
