@@ -1,17 +1,22 @@
-numb = input("Please input a number: ")
-numb2 = input("Please input a second number: ")
-oper = input("Please input an operator (+, -, *, /): ")
+import random
+numb = random.randint (1,100)
+guess = 0
+attempt = 0
 
-if oper == "+":
-    print(int(numb) + int(numb2) + 0.00)
-elif oper == "-":
-    print(int(numb) - int(numb2) + 0.00)
-elif oper == "*":
-    print(int(numb) * int(numb2) + 0.00)
-elif oper == "/":
-    if numb2 == "0":
-        print("Can not divide by zero! ")
+
+while int(guess) != numb:
+    guess = input("Please input a number: ")
+    if guess.isdigit():
+        if (int(guess)) < numb:
+            print("Too low")
+            attempt = attempt + 1
+        elif (int(guess)) > numb:
+            print("Too high")
+            attempt = attempt + 1
+        elif (int(guess)) == numb:
+            attempt = attempt + 1
+            print(f"You guessed it! It only took you {attempt} amount of try!")
     else:
-        print( int(numb) / int(numb2) + 0.00)
-else:
-    print("Invalid operator")
+        print("Invalid input, please try again")
+
+
