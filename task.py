@@ -1,7 +1,9 @@
 tasks = []
 numb = 1
+new_tasks = []
+end = "n"
 
-while True:
+while end != "q":
     task = input("What would you like to do: \n a. Add \n d. Delete \n v. View \n q. Quit \n > ")
     
     if task == "a":
@@ -18,35 +20,16 @@ while True:
     
     elif task == "d":
         del_num = input("Enter the task number to delete: ")
-        tasks = [t for t in tasks if not t.startswith(f"{del_num}:")]
+        for task in tasks:
+            if not task.startswith(del_num + ":"):
+                new_tasks.append(task)
+        tasks = new_tasks
     
     elif task == "q":
         print("Goodbye")
-        break
+        end = "q"
     
     else:
         print("Invalid input")
 
 
-
-
-'''
-task = "b"
-tasks = ""
-numb = 1
-
-while task != "q":
-    task = input("What would you like to do: \n a. Add \n d. Delete \n v. View \n q. Quit \n > ")
-    if task == "a":
-        tasks = tasks + "\n " + str(numb) + ": " + input("Enter a task: ")
-        numb = numb + 1
-    elif task == "v":
-        print(tasks)
-    elif task == "q":
-        print("Goodbye")
-    elif task == "d":
-        tasks = tasks.replace(input("Enter the task number to delete: ") + ": ", "")
-        numb = numb - 1
-    else:
-        print("Invalid input")
-'''
