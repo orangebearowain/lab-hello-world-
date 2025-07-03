@@ -18,5 +18,6 @@ while int(guess) != numb:
             print(f"You guessed it! It only took you {attempt} amount of try!")
     else:
         print("Invalid input, please try again")
+        guess = 0
 
 
