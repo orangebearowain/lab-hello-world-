@@ -2,7 +2,7 @@ import random
 numb = random.randint (1,100)
 guess = 0
 attempt = 0
-
+print("I am thinking of a number between 1 and 100")
 
 while int(guess) != numb:
     guess = input("Please input a number: ")
