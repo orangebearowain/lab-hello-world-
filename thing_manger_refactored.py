@@ -15,7 +15,6 @@ def look(stuff, lista, listb):
         print("Doesn't exist")
 
 def add(stuff, lista, listb):
-    stuff = input ("Enter new scategory: ")
     lista.append(stuff)
     stuff = input(f"Enter your favorite for {stuff}: ")
     listb.append(stuff)
@@ -46,7 +45,7 @@ while True:
     if control == "lookup": 
         look(stuff = input("Which category would you like to see? "), lista = item, listb = item2)
     elif control == "add":
-        add(stuff = input("Would you like to add a new favorite category? (yes/no) "), lista = item, listb = item2)
+        add(stuff = input ("Enter new category: "), lista = item, listb = item2)
     elif control == "update":
         update(stuff = input("What catergory would you like to update? "), lista = item, listb = item2)
     elif control == "delete":
