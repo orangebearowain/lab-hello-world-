@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Owain",
+    "number": "445-555",
+    "metadata": {
+      "added_by": "user",
+      "source": "manual entry",
+      "tags": []
+    }
+  },
+  {
+    "name": "Owain",
+    "number": "555-444",
+    "metadata": {
+      "added_by": "user",
+      "source": "manual entry",
+      "tags": []
+    }
+  },
+  {
+    "name": "Tom",
+    "number": "999-643",
+    "metadata": {
+      "added_by": "user",
+      "source": "manual entry",
+      "tags": []
+    }
+  }
+]
