@@ -15,7 +15,7 @@ def look(stuff, lista, listb):
         print("Doesn't exist")
 
 def add(stuff, lista, listb):
-    stuff = input ("Enter new category: ")
+    stuff = input ("Enter new scategory: ")
     lista.append(stuff)
     stuff = input(f"Enter your favorite for {stuff}: ")
     listb.append(stuff)
